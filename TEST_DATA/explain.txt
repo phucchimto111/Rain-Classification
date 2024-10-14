@@ -1,0 +1,22 @@
+-- ERA5 -- 
+CAPE: Convective Available Potential Energy
+CIN: Convective INhibition
+R850: Relative Humidity at 850 hPa
+TCWV: Total Column Water Vapor
+U850 and V850: Wind Components at 850 hPa
+SLHF: Surface Latent Heat Flux
+
+-- HIMAWARI -- 
+B04B (Near Infrared):
+
+B05B (Shortwave Infrared):
+
+B06B (Water Vapor):
+
+B10B (IR Temperature):
+
+B11B (Thermal Infrared):
+
+B12B (Water Vapor):
+
+-- AWS -- 

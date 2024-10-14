@@ -1,6 +1,6 @@
 from ultils import *
 
-hima_sub_folder = [folder for folder in list_folders("../DATA/HIMA/")]
+hima_sub_folder = [folder for folder in list_folders("../../TEST_DATA/HIMA/")]
 
 for band in hima_sub_folder: 
     print(band)

@@ -1,6 +1,6 @@
 from ultils import *
 
-era_sub_folder = [folder for folder in list_folders("../DATA/ERA5/")]
+era_sub_folder = [folder for folder in list_folders("../../TEST_DATA//ERA5/")]
 
 for folder in era_sub_folder:
     print(folder)

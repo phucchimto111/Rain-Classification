@@ -1,10 +1,10 @@
-from ultils import *
+from helper import *
 
-era_sub_folder = [folder for folder in list_folders("../../TEST_DATA//ERA5/")]
+era_sub_folder = [folder for folder in list_folders("../../TEST_DATA/ERA5/")]
 
-for folder in era_sub_folder:
-    print(folder)
-    folder_path = f"{folder}/2019/04/01/"
-    output_csv = f"{folder.split("/")[3]}era5.csv"
-    tif_files = list_tif_files_recursively(folder_path)
-    process_tif_files(tif_files, output_csv)
+for band in era_sub_folder: 
+    specific_path = f"{band}/2019/04/01/"
+    print(specific_path)
+
+    tif_files = list_tif_files_recursively(specific_path) 
+    tif_to_csv(tif_files, f"../output/Era5_{get_var_from_path(tif_files[0])}.csv")

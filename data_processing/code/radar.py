@@ -1,5 +1,5 @@
-from ultils import *
+from helper import *
 
-output = "radar.csv"
+output = "../output/radar.csv"
 tif_files = list_tif_files_recursively("../../TEST_DATA/Radar/2019/04/01/")
-process_tif_files(tif_files, output)
+tif_to_csv(tif_files, output)
